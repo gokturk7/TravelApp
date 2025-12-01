@@ -15,8 +15,8 @@ function HomeStack() {
   return (
     <Stack.Navigator
       screenOptions={{
-        headerStyle: { backgroundColor: 'tomato' }, // Header Arkaplan
-        headerTintColor: '#fff', // Header Yazı Rengi
+        headerStyle: { backgroundColor: 'tomato' },
+        headerTintColor: '#fff', 
       }}
     >
       <Stack.Screen name="Home" component={HomeScreen} />
