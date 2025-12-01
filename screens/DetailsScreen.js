@@ -7,8 +7,6 @@ export default function DetailsScreen({ navigation }) {
         <View style={styles.container}>
           <Text style={styles.title}>Welcome to {place}</Text>
           <Text style={styles.subtitle}>Rating: {rating} Stars</Text>
-          
-          {/* Meydan Okuma: Rating 5 ise özel mesaj */}
           {rating === 5 && (
             <Text style={{color: 'gold', fontSize: 20, marginBottom: 20}}>★ Top Pick! ★</Text>
           )}
@@ -17,3 +15,11 @@ export default function DetailsScreen({ navigation }) {
         </View>
       );
     }
+
+    const styles = StyleSheet.create**({
+        container: {
+          flex: 1,
+          padding: 20,
+          backgroundColor: '#fff',
+        },
+});

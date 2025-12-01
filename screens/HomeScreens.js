@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text, Button, StyleSheet} from 'react-native';
 
 export default function HomeScreen({ navigation }) {
   return (
@@ -12,7 +12,7 @@ export default function HomeScreen({ navigation }) {
           onPress={() => navigation.navigate('Details', { place: 'Paris', rating: 5 })}
         />
       </View>
-      
+
       <View style={styles.buttonContainer}>
         <Button
           title="Go to London"
@@ -22,3 +22,11 @@ export default function HomeScreen({ navigation }) {
     </View>
   );
 }
+
+const styles = StyleSheet.create**({
+    container: {
+      flex: 1,
+      padding: 20,
+      backgroundColor: '#fff',
+    },
+});
